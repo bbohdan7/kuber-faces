@@ -14,7 +14,7 @@ open class MainController {
     @Inject
     private lateinit var userDao: UserDAO
 
-    fun getUsers(): List<User> = userDao.all()
+    open fun getUsers(): List<User> = userDao.all()
 
-    fun getAppName(): String = "FacesKuber App"
+    open fun getAppName(): String = "FacesKuber App"
 }

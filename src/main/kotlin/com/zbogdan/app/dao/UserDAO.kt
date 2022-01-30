@@ -13,7 +13,7 @@ open class UserDAO : AbstractDAO<User>(User::class.java) {
     private lateinit var em: EntityManager
 
     @PostConstruct
-    fun init() {
+    open fun init() {
         println("UserDAO has been instantiated")
     }
 
