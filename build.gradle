@@ -17,8 +17,8 @@ repositories {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib"
-    implementation 'javax:javaee-api:8.0'
-    implementation 'com.sun.faces:jsf-api:2.2.20'
-    implementation 'com.sun.faces:jsf-impl:2.2.20'
+    providedCompile 'javax:javaee-api:8.0'
+    providedCompile 'com.sun.faces:jsf-api:2.2.20'
+    providedCompile 'com.sun.faces:jsf-impl:2.2.20'
     implementation 'org.primefaces:primefaces:11.0.0'
 }
